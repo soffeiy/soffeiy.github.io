@@ -1,0 +1,258 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Shafia Kamila</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* 1. Pengaturan Dasar Halaman */
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        background-color: #555; /* Warna luar agar CV terlihat seperti kertas */
+        display: flex;
+        justify-content: center; /* Menengahkan CV di layar */
+        padding: 20px;
+      }
+
+      /* 2. Container Utama CV */
+      .cv-container {
+        display: flex;
+        width: 800px; /* Lebar diperbesar agar teks tidak berdesakan */
+        max-width: 100%;
+        background: #d0d1a7;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Efek bayangan kertas */
+      }
+
+      /* 3. SIDEBAR (Kiri - Lebar 3/7) */
+      .bagiankiri {
+        flex: 3; /* Mengambil proporsi 3 bagian dari total 7 */
+        background-color: #a92f50;
+        color: #d0d1a7;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+
+      /* Pengaturan isi Sidebar */
+      .profil-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 15px auto; /* Menengahkan foto */
+        border: 3px solid #d0d1a7; /* Garis tepi foto */
+      }
+
+      .bagiankiri h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 10px 0 5px 0;
+        color: #d0d1a7; /* Sengaja dibuat sama dengan teks agar terbaca */
+      }
+
+      .bagiankiri .subtitle {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .bagiankiri .kontak-item {
+        background-color: #d0d1a7; /* Latar belakang persegi panjang */
+        color: #a92f50; /* Warna teks pink */
+        padding: 8px 10px; /* Memberi ruang di dalam kotak agar teks tidak menabrak garis */
+        margin-bottom: 12px; /* Jarak antar kotak atas dan bawah */
+        border-radius: 20px; /* Membuat ujungnya melengkung seperti pil */
+        text-align: center; /* Menengahkan teks di dalam kotak */
+        font-size: 12px;
+        font-weight: 600; /* Teks agak ditebalkan sedikit agar lebih tajam */
+      }
+
+      .bagiankiri h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #d0d1a7; /* Garis pemisah bawah judul */
+        padding-bottom: 5px;
+      }
+
+      .bagiankiri p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 0 0 10px 0;
+      }
+
+      .semibold {
+        font-weight: 600;
+      }
+
+      /* 4. KONTEN UTAMA (Kanan - Lebar 4/7) */
+      .bagiankanan {
+        flex: 4; /* Mengambil proporsi 4 bagian dari total 7 */
+        background-color: #d0d1a7;
+        color: #a92f50;
+        padding: 40px;
+        box-sizing: border-box;
+      }
+
+      .bagiankanan h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .bagiankanan p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      /* Pengaturan Layout Tahun & Deskripsi (Kiri-Kanan) */
+      .timeline-item {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      .timeline-year {
+        width: 100px;
+        font-size: 13px;
+        font-weight: 700;
+        flex-shrink: 0; /* Agar kolom tahun tidak mengecil */
+      }
+
+      .timeline-content {
+        flex-grow: 1;
+        font-size: 13px;
+      }
+
+      .timeline-content .title {
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .timeline-content .subtitle {
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="bagiankiri">
+        <img src="./profilcv.jpeg" alt="Shafia Kamila" class="profil-img" />
+
+        <h1>Shafia kamila</h1>
+        <div class="subtitle">Freshman of Information Systems</div>
+
+        <div #d0d1a7, class="kontak-item">Medan, March 27, 2007</div>
+        <div class="kontak-item">+62 877 4484 8958</div>
+        <div class="kontak-item">shafiakamila@student.ub.ac.id</div>
+        <div class="kontak-item">Malang, Indonesia</div>
+
+        <h3>Skills</h3>
+        <p>English speaking<br />Java programming</p>
+
+        <h3>Honor & award</h3>
+        <p><span class="semibold">The Most Inspiring Student (2022)</span></p>
+
+        <h3>Hobbies & Interest</h3>
+        <p class="semibold" style="line-height: 1.8">
+          Big Data<br />
+          Machine learning<br />
+          Books<br />
+          Research<br />
+          Arts & visual designs
+        </p>
+      </div>
+
+      <div class="bagiankanan">
+        <h2>About</h2>
+        <p>
+          I have a background in Information systems, with a focus on building
+          systems and the UI design. I am the type of person who wills to learn
+          through collaborations and real-world projects.
+        </p>
+
+        <h2>Education</h2>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2019 - 2022</div>
+          <div class="timeline-content">
+            <div class="title">Al Azhar Islamic Boarding School</div>
+            <div class="subtitle">Junior High School</div>
+            I graduated in July 2022, receiving an award for the most inspiring
+            student of the class of 2019. During my junior high school years, I
+            was mostly active in participating English speech competitions and
+            honored some awards from them. I was also involved in math
+            competition training in my school.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2022 - 2025</div>
+          <div class="timeline-content">
+            <div class="title">SMA 4 Medan</div>
+            <div class="subtitle">Senior High School</div>
+            I graduated in July 2025 with a GPA of 3.69 and received an award
+            for the best graduate of the faculty at the time. In my thesis, I
+            looked into how well-performed systems can create significant
+            financial efficiency and encourage the strategic operations of an
+            organization.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2025 - 2029</div>
+          <div class="timeline-content">
+            <div class="title">Information Systems, Universitas Brawijaya</div>
+            <div class="subtitle">
+              Bachelor of Computer Science, Information Systems
+            </div>
+            I am a freshman of 2025, with a GPA of 3.69. In my current study,
+            I’m focus to improve my Java programming skill and to strengthen
+            deep understanding about product management. I am also enthusiastic
+            about looking into how well-performed systems can create significant
+            financial efficiency and encourage the strategic operations of an
+            organization.
+          </div>
+        </div>
+
+        <h2>Experience</h2>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Sept 2025</div>
+          <div class="timeline-content">
+            <div class="title">
+              UI/UX Design Bootcamp Participant - Maliki Tech Fest 2025
+            </div>
+            Google Developer Groups On Campus UIN Maulana Malik Ibrahim, Malang
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Sept 2025</div>
+          <div class="timeline-content">
+            <div class="title">
+              Generative Artificial Intelligence - Certificate of Competence
+            </div>
+            Institute for Data Innovation and Artificial Intelligence (IDEA-AI),
+            Australia
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
